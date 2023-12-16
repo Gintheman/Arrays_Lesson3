@@ -38,9 +38,9 @@ int[] array = new int[amount];
 
 for(int i = 0; i < array.Length; i++)
 {
-    if (num >= 1)
+    if (natNum >= 10000)
     {
-        array[0] = num / 10000;
+        array[0] = natNum / 10000;
     }
     System.Console.Write(array[i] + " ");
 };
