@@ -1,60 +1,7 @@
-﻿// int natNum = new Random().Next(1, 100001);
-// Console.Write(natNum);
-// int num = 0;
-// int amount = 0;
-
-// // if(num >= 10000)
-// // {
-// //     amount = 5;
-// // }
-// // else if(num >= 1000)
-// // {
-// //     amount = 4;
-// // }
-// // else if(num >= 100)
-// // {
-// //     amount = 3;
-// // }
-// // else if(num >= 10)
-// // {
-// //     num = 2;
-// // }
-// // else if(num >= 1)
-// // {
-// //     num = 1;
-// // }
-
-
-// while(natNum >= 1)
-// {
-//     num = natNum / 10;
-//     amount++;
-// }
-
-
-
-
-
-// int[] array = new int[amount];
-
-// for(int i = 0; i < array.Length; i++)
-// {
-//     if (natNum >= 10000)
-//     {
-//         array[0] = natNum / 10000;
-//     }
-//     System.Console.Write(array[i] + " ");
-// };
-
-
-
+﻿
 // с помощью интернета пришел к варианту ниже.
 
-
-static void Main()
-{
-
-        // Вводим исходное число
+       // Вводим исходное число
 
         Console.WriteLine("Enter natural number: ");
 
@@ -76,7 +23,7 @@ static void Main()
 
         // Создаем массив нужного размера
 
-        int[] array = new int[length];
+        int[] digits = new int[length];
 
 
 
@@ -86,25 +33,17 @@ static void Main()
 
         {
 
-            array[i] = int.Parse(numberString[i].ToString());
+            digits[i] = int.Parse(numberString[i].ToString());
+            System.Console.Write(digits[i] + " ");
 
         }
 
 
 
-        // Выводим массив на экран
+       
 
-        Console.WriteLine("Массив цифр числа:");
-
-        foreach (int array in arrays)
-
-        {
-
-            Console.Write(array[i] + " ");
-
-        }
+       
 
 
 
         
-}
