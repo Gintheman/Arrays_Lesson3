@@ -1,5 +1,7 @@
-﻿int num = new Random().Next(1, 100001);
-int amount =0;
+﻿int natNum = new Random().Next(1, 100001);
+int num = 0;
+int amount = 0;
+
 // if(num >= 10000)
 // {
 //     amount = 5;
@@ -22,9 +24,9 @@ int amount =0;
 // }
 
 
-while(num >= 1)
+while(natNum >= 1)
 {
-    num = num / 10;
+    num = natNum / 10;
     amount++;
 }
 
@@ -36,7 +38,7 @@ int[] array = new int[amount];
 
 for(int i = 0; i < array.Length; i++)
 {
-    if (num >= 10000)
+    if (num >= 1)
     {
         array[0] = num / 10000;
     }
